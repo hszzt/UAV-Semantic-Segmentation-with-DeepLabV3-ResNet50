@@ -23,7 +23,9 @@ To address these issues, this project uses:
 
 ## Dataset
 
-The dataset structure is organized as follows:
+The dataset is not included in this repository due to file size limitations and possible distribution restrictions.
+
+Please prepare the dataset in the following structure before running the code:
 
 ```text
 UAV_dataset/
@@ -69,13 +71,13 @@ This project uses **DeepLabV3 with a ResNet50 backbone**.
 * initialized with pretrained weights
 * strong feature extractor for transfer learning
 
-## Segmentation Head
+#### Segmentation Head
 
 * based on **DeepLabV3**
 * includes **ASPP (Atrous Spatial Pyramid Pooling)** for multi-scale feature extraction
 * final classifier is modified to output **16 classes**
 
-### Why DeepLabV3?
+#### Why DeepLabV3?
 
 DeepLabV3 is well suited for UAV image segmentation because aerial scenes contain objects with very different spatial scales. ASPP helps capture both global context and local details, which improves segmentation quality in complex outdoor scenes.
 
@@ -177,8 +179,6 @@ These examples help analyze model behavior beyond loss values alone.
 ## How to Run
 
 ### 1. Prepare Dataset
-
-The dataset is not included in this repository due to file size limitations and possible distribution restrictions.
 
 Please prepare the dataset in the following structure before running the code:
 
