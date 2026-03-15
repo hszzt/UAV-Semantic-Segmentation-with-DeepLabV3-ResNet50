@@ -121,7 +121,7 @@ During inference, the model:
 
 The training loss decreases steadily over epochs, which indicates stable convergence.
 
-![Training Loss Curve](fig/training_loss_curve.png)
+![Training Loss Curve](/training_loss_curve.png)
 
 ### Qualitative Prediction Analysis
 
@@ -136,9 +136,9 @@ These examples help analyze model behavior beyond loss values alone.
 
 ### Example Error Analysis
 
-![Error Analysis 1683](fig/error_analysis_1683.png)
+![Error Analysis 1683](/error_analysis_1683.png)
 
-![Error Analysis 2377](fig/error_analysis_2377.png)
+![Error Analysis 2377](/error_analysis_2377.png)
 
 ## Observations
 
