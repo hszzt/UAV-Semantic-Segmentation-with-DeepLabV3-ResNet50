@@ -43,13 +43,13 @@ UAV_dataset/
 
 ## Method
 
-## 1. Preprocessing
+### 1. Preprocessing
 
 * Images are resized to **512 × 512**
 * RGB images are normalized using ImageNet-style normalization
 * Masks are resized with **nearest-neighbor interpolation** to preserve class IDs
 
-## 2. Data Augmentation
+### 2. Data Augmentation
 
 The training pipeline includes augmentation to improve generalization:
 
@@ -59,17 +59,17 @@ The training pipeline includes augmentation to improve generalization:
 
 These augmentations help the model adapt to viewpoint and lighting variations in aerial scenes.
 
-## 3. Model Architecture
+### 3. Model Architecture
 
 This project uses **DeepLabV3 with a ResNet50 backbone**.
 
-### Backbone
+#### Backbone
 
 * **ResNet50**
 * initialized with pretrained weights
 * strong feature extractor for transfer learning
 
-### Segmentation Head
+## Segmentation Head
 
 * based on **DeepLabV3**
 * includes **ASPP (Atrous Spatial Pyramid Pooling)** for multi-scale feature extraction
@@ -178,7 +178,9 @@ These examples help analyze model behavior beyond loss values alone.
 
 ### 1. Prepare Dataset
 
-Place the dataset under the following directory:
+The dataset is not included in this repository due to file size limitations and possible distribution restrictions.
+
+Please prepare the dataset in the following structure before running the code:
 
 ```text
 UAV_dataset/
